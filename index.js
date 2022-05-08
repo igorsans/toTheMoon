@@ -24,8 +24,3 @@ function useData(resposta) {
     $('#title').prepend(`<h3>${resposta.title}</h3>`)
     $('#img').prepend(`<img src='${resposta.url}'/>`)
 }
-addEventListener
-
-await
-
-ajax
