@@ -8,7 +8,6 @@ $("#btn").click(function (e) {
         url: `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${data}`,
         success: function (resposta) {
             useData(resposta)
-            console.log(resposta);
         },
         error: function (erro) {
             console.log(erro);
@@ -24,12 +23,9 @@ function useData(resposta) {
     $('#text').prepend(`<p>${resposta.explanation}</p>`)
     $('#title').prepend(`<h3>${resposta.title}</h3>`)
     if(resposta.media_type == "video"){
-        console.log('video');
-        $('#media').prepend(`<iframe width="420" height="315"
-        src='${resposta.url}'>
-        </iframe>`)
+        $('#media').prepend(`<iframe width="420" height="315" src='${resposta.url}'></iframe><p> Link of original video: <a href="${resposta.url}" target="_Blank">Here<a>`)
     } else if (resposta.media_type == 'image'){
-        console.log('imagem');
-        $('#media').prepend(`<img src='${resposta.url}'/>`)
+        $('#media').prepend(`<img id='borda'src='${resposta.url}'/><p> Link of original picture: <a href="${resposta.url}" target="_Blank">Here<a>. Provide by: Nasa</p>`)
+        // $('body').css("background", "black");
     }
 }
