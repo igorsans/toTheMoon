@@ -7,19 +7,27 @@
     src: url(./fonts/OleoScriptSwashCaps-Bold.ttf) format('truetype');
 }
 @font-face {
-    font-family: 'MajorRd';
+    font-family: 'firaSans';
     src: url(./fonts/FiraSansCondensed-Regular.ttf) format('truetype');
 }
-
 body{
-    text-align: center;
+    text-shadow: 1.2px 2.2px 1px rgba(0, 0, 125, 0.572);
     background-image: url(./img/images.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
 }
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #borda{
     border: 4px solid rgb(255, 255, 255);
+    width:730px;
+    height:542px
 }
 abbr{
     text-decoration: underline;
@@ -27,8 +35,37 @@ abbr{
 }
 h1{
     font-family: 'Oleo', sans-serif;
+    margin: 30px 0 25px;
 }
-p,h3{
-    font-family: 'MajorRd', sans-serif;
-    font-size: 1.1em;
+
+p,h3,h2{
+    font-family: 'firaSans', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 730px;
+}
+#btn,#data{
+    margin: 15px;
+}
+#data{
+    padding: 7px;
+}
+#btn{
+    font-family: 'firaSans', sans-serif;
+    padding: 10px 40px;
+    background-color: white;
+    border-style: none;
+}
+
+@media (max-width:425px){
+    #media{
+        max-width: 415px;
+    }
+    p,h3,h2{
+        width: 405px;
+    }
+    #borda{
+        width: 405px;
+        height: 300px;
+    }
 }
