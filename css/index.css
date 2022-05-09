@@ -4,15 +4,15 @@
 }
 @font-face {
     font-family: 'Oleo';
-    src: url(./fonts/OleoScriptSwashCaps-Bold.ttf) format('truetype');
+    src: url(../fonts/OleoScriptSwashCaps-Bold.ttf) format('truetype');
 }
 @font-face {
     font-family: 'firaSans';
-    src: url(./fonts/FiraSansCondensed-Regular.ttf) format('truetype');
+    src: url(../fonts/FiraSansCondensed-Regular.ttf) format('truetype');
 }
 body{
     text-shadow: 1.2px 2.2px 1px rgba(0, 0, 125, 0.572);
-    background-image: url(./img/images.jpg);
+    background-image: url(../img/images.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
