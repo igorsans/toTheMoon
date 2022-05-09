@@ -3,9 +3,14 @@
     padding: 0;
 }
 @font-face {
-    font-family: 'Sh';
-    src: url(./fonts/Shrikhand-Regular.ttf) format('truetype');
+    font-family: 'Oleo';
+    src: url(./fonts/OleoScriptSwashCaps-Bold.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'MajorRd';
+    src: url(./fonts/FiraSansCondensed-Regular.ttf) format('truetype');
+}
+
 body{
     text-align: center;
     background-image: url(./img/images.jpg);
@@ -21,5 +26,9 @@ abbr{
     text-decoration-color: rgb(255, 255, 255);
 }
 h1{
-    font-family: 'Sh', sans-serif;
+    font-family: 'Oleo', sans-serif;
+}
+p,h3{
+    font-family: 'MajorRd', sans-serif;
+    font-size: 1.1em;
 }

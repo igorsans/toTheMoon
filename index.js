@@ -1,4 +1,3 @@
-
 $("#btn").click(function (e) {
     e.preventDefault();
     $('#date,#text,#media,#title').remove()
@@ -12,10 +11,8 @@ $("#btn").click(function (e) {
         error: function (erro) {
             console.log(erro);
         },
-
     });
-
-    $(`<div id='date'></div> <div id='text'></div> <div id='title'></div> <div id='media'></div>`).appendTo("#results")
+    $(`<div id='date'></div> <div id='text'></div><div id='title'></div> <div id='media'></div>`).appendTo("#results")
 });
 
 function useData(resposta) {    
@@ -26,6 +23,5 @@ function useData(resposta) {
         $('#media').prepend(`<iframe width="420" height="315" src='${resposta.url}'></iframe><p> Link of original video: <a href="${resposta.url}" target="_Blank">Here<a>`)
     } else if (resposta.media_type == 'image'){
         $('#media').prepend(`<img id='borda'src='${resposta.url}'/><p> Link of original picture: <a href="${resposta.url}" target="_Blank">Here<a>. Provide by: Nasa</p>`)
-        // $('body').css("background", "black");
     }
 }
