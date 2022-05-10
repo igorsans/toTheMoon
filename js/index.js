@@ -7,12 +7,12 @@ $('#tT').hide().fadeIn(2500, ()=>{
 
 $("#btn").click(function (e) {
     e.preventDefault();
-    $('#date,#text,#media,#title').remove()
     const data = $('#data').val()
     const key = 'jPARZgxn9D6y8F2Cd2SQ4DEwm35UQRnqV8grHAI8'
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${data}`,
         success: function (resposta) {
+            $('#date,#text,#media,#title').remove()
             useData(resposta)
         },
         error: function (erro) {
