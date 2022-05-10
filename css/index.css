@@ -65,7 +65,19 @@ p,h3,h2{
         width: 405px;
     }
     #borda{
-        width: 405px;
+        width: 475px;
+        height: 300px;
+    }
+}
+@media (max-width:375px){
+    #media{
+        max-width: 345px;
+    }
+    p,h3,h2{
+        width: 340px;
+    }
+    #borda{
+        width: 350px;
         height: 300px;
     }
 }
